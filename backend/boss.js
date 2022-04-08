@@ -55,11 +55,11 @@ class BlockHeader {
 class BlockChain {
   constructor() {
     this.chain = [];
-    this.genesisBolck();
+    this.genesisBlock();
   }
 
   // first block in a blockchain
-  genesisBolck() {
+  genesisBlock() {
     const blockHeight = 0;
     const prevBlockHash = ZERO_HASH;
     this.addBlock(blockHeight, prevBlockHash);
